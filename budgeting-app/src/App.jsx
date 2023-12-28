@@ -10,6 +10,10 @@ import Error from "./pages/Error";
 // Layouts
 import Main from "./layouts/Main";
 
+// library
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 // Actions
 import { logoutAction } from "./actions/logout";
 const router = createBrowserRouter([
@@ -39,6 +43,7 @@ function App() {
   return (
     <> 
      <RouterProvider router={router} />
+     <ToastContainer/>
     </>
   )
 }
